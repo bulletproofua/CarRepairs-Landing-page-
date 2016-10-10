@@ -6419,10 +6419,10 @@ button.close {
 .carousel-caption {
   position: absolute;
   right: 15%;
-  bottom: 20px;
+  bottom: 10px;
   left: 15%;
   z-index: 10;
-  padding-top: 20px;
+  padding-top: 10px;
   padding-bottom: 20px;
   color: #fff;
   text-align: center;

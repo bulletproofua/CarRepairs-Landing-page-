@@ -49,8 +49,6 @@ img{
     font-size: 15px; 
 }
 
-
-
 .img-size{
     width: auto;
     max-width: 300px;
@@ -58,8 +56,13 @@ img{
     margin-bottom: 5px;
 }
 
-.hover1 img {
-  opacity: 1;
+
+.spinerTitle{   
+    font-size: 30px;
+}
+.hover1 img {    
+    max-width: 320px;
+    opacity: 1;
 	-webkit-transition: .3s ease-in-out;
 	transition: .3s ease-in-out; 
 }
@@ -71,6 +74,7 @@ img{
 
 
 .hover2 img {
+    max-width: 280px;
    -webkit-transform: scale(1);
 	transform: scale(1);
 	-webkit-transition: .5s ease-in-out;
@@ -80,6 +84,10 @@ img{
 .hover2:hover img{
     -webkit-transform: scale(1.05);
 	transform: scale(1.05);
+}
+
+#listOfP{
+    padding-top: 10px;
 }
 
 .brand,
@@ -156,7 +164,6 @@ img{
 
 
 
-
 .intro-text {
     text-transform: uppercase;
     font-size: 1.25em;
@@ -164,8 +171,12 @@ img{
     letter-spacing: 1px;
 }
 
+.img-title{
+    margin-bottom: 10px;
+}
+
 .img-border {
-   
+  
     float: none;
     margin: 0 auto 0;
     border: #999999 solid 1px;
@@ -197,7 +208,19 @@ img{
     height:100%;
     width:100%;
     position:absolute;
- 
+    
+}
+  .carousel-caption{
+     position: absolute;
+      right: 15%;
+      bottom: 10px;
+      left: 15%;
+      z-index: 10;
+      padding-top: 10px;
+      padding-bottom: 20px;
+      color: #fff;
+      text-align: center;
+      text-shadow: 1px 1px 2px rgba(0, 0, 0, .8);   
 }
 
 footer {
@@ -210,7 +233,157 @@ footer p {
     padding: 50px 0;
 }
 
-@media screen and (min-width:990px) {
+@media  screen and (min-width: 320px){     
+    
+    .spinerTitle{   
+        font-size: 1.1em;
+    }
+
+    .hover1 img {       
+        max-width: 280px;
+        max-height: 200px;
+        margin-bottom: 7px;   
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out; 
+    }
+    .hover1:hover img{
+        opacity: .7;
+    }
+    
+    .contact{
+        font-size: 0.6em;
+    }
+    
+    .map_responsive{
+        display: none;
+    }
+    
+}
+
+@media  screen and (min-width: 480px){     
+    
+    .spinerTitle{   
+        font-size: 1.1em;
+    }
+
+    .hover1 img {       
+        max-width: 280px;
+        max-height: 200px;
+        margin-bottom: 7px;   
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out; 
+    }
+    .hover1:hover img{
+        opacity: .7;
+    }
+    
+    .contact{
+        font-size: 0.6em;
+    }
+    
+}
+
+@media screen and (min-width:768px) {
+    
+    .brand {
+        display: inherit;
+        margin: 0;
+        padding: 0px 0 5px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        font-family: "Josefin Slab","Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-size: 2em;
+        font-weight: 700;
+        line-height: normal;
+        color: #fff;
+    }
+
+    .top-divider {
+        margin-top: 0;
+    }
+
+    .img-left {
+        float: left;
+        margin-right: 25px;
+    }
+
+    .address-bar {
+        display: inherit;
+        margin: 0;
+        padding: 0 0 8px;
+        text-align: center;
+        text-shadow: 1px 1px 2px rgba(0,0,0,0.5);
+        text-transform: uppercase;
+        font-size: 1em;
+        font-weight: 400;
+        letter-spacing: 3px;
+        color: #fff;
+    }
+
+    .navbar {       
+        border-radius: 0;
+    }
+
+    .navbar-header {
+        display: none;
+    }
+
+    .navbar {
+        min-height: 0;
+    }
+
+    .navbar-default {
+      
+        border: solid;
+        border-color: rgba(153, 153, 153,0.9) rgba(255,255,255,0.9);
+        background: #fff;
+        background: rgba(255,255,255);
+    }
+    
+
+    .nav>li>a {
+        padding: 20px;
+    }
+
+    .navbar-nav>li>a {
+        line-height: normal;
+    }
+
+    .navbar-nav {
+        display: table;
+        float: none;
+        margin: 0 auto;
+        table-layout: fixed;
+        font-size: 1.25em;
+    }
+    
+    
+    .spinerTitle{   
+        font-size: 1.3em;
+    }
+
+    .hover1 img {       
+        max-width: 310px;
+        max-height: 220px;
+        margin-bottom: 7px;   
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out; 
+    }
+    .hover1:hover img{
+        opacity: .7;
+    }
+    
+    .contact{
+        font-size: 0.8em;
+    }
+    
+     
+}
+
+@media screen and (min-width:991px) {
 
     .brand {
         display: inherit;
@@ -284,6 +457,29 @@ footer p {
         font-size: 1.25em;
     }
      
+  
+    .spinerTitle{   
+        font-size: 1.5em;
+    }
+    
+    .hover1 img {       
+        max-width: 300px;
+        max-height: 220px;
+        margin-bottom: 7px;
+        margin-left: -10px;
+     
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out; 
+    }
+    .hover1:hover img{
+        opacity: .7;
+    }
+    
+    .contact{
+        font-size: 1.1em;
+    }
+
 }
 
 @media screen and (min-width:1200px) {
@@ -292,29 +488,25 @@ footer p {
         display: table;
         clear: both;
     }
-}
-
-
-
-@media (min-width: 1200px) { ... }
- 
-/* Portrait tablet to landscape and desktop */
-@media (min-width: 768px) and (max-width: 991px) { ... }
- 
-/* Landscape phone to portrait tablet */
-@media (max-width: 767px) { ... }
- 
-/* Landscape phones and down */
-@media screen and (max-width: 480px) { 
-    body{
-         padding-top: 150px;        
+    
+    .spinerTitle{   
+        font-size: 1.8em;
     }
-    .spinerTitle{
-       font-size: 0.8em;        
+    .hover1 img {       
+        max-width: 380px;
+        max-height: 260px;
+        margin-bottom: 7px;
+     
+        opacity: 1;
+        -webkit-transition: .3s ease-in-out;
+        transition: .3s ease-in-out; 
     }
-    .img{
-        display: block;
-        font-size: 0.8em;
+    .hover1:hover img{
+        opacity: .7;
     }
     
+    .contact{
+        font-size: 1.3em;
+    }
 }
+ 
